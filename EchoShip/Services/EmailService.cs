@@ -20,7 +20,7 @@ namespace EchoShip.Services
             // send email
             using var smtp = new SmtpClient();
             smtp.Connect("smtp.gmail.com", 587, SecureSocketOptions.StartTls);
-            smtp.Authenticate("rasulvh@code.edu.az", "jrlsspzagxaeydlu");
+            smtp.Authenticate("rasulvh@code.edu.az", "isxmeulkiwgdbejg");
             smtp.Send(email);
             smtp.Disconnect(true);
         }

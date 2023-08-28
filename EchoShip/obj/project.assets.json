@@ -11063,11 +11063,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Desktop\\WEB\\EchoShip\\EchoShip\\EchoShip.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Desktop\\WRO\\EchoShip\\EchoShip\\EchoShip.csproj",
       "projectName": "EchoShip",
-      "projectPath": "C:\\Users\\User\\Desktop\\WEB\\EchoShip\\EchoShip\\EchoShip.csproj",
+      "projectPath": "C:\\Users\\User\\Desktop\\WRO\\EchoShip\\EchoShip\\EchoShip.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Desktop\\WEB\\EchoShip\\EchoShip\\obj\\",
+      "outputPath": "C:\\Users\\User\\Desktop\\WRO\\EchoShip\\EchoShip\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
