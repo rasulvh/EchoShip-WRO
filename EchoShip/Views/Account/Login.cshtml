@@ -1,0 +1,37 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+
+@section Links{
+    <link rel="stylesheet" href="~/assets/css/account.css">
+}
+
+@section Scripts{
+    <script src="~/assets/js/account.js"></script>
+}
+
+<main>
+
+    <section id="form">
+        <div class="form">
+            <form method="post" asp-action="Login">
+                <div class="username">
+                    <input asp-for="Username" placeholder="USERNAME">
+                    <i class="fa-light fa-user"></i>
+                </div>
+                <div class="password">
+                    <input asp-for="Password" placeholder="PASSWORD" class="password-input">
+                    <i class="fa-light fa-lock"></i>
+                    <i class="fa-light fa-eye d-none"></i>
+                    <i class="fa-light fa-eye-slash d-none"></i>
+                </div>
+                <div class="text-danger" asp-validation-summary="All"></div>
+                <div class="button">
+                    <button type="submit">Login</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+</main>

@@ -1,0 +1,285 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+  background-image: url(./../img/3242104.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* Header */
+
+.nav-area {
+  height: 100px;
+  background-color: rgb(0, 12, 32);
+}
+
+.nav-area .row,
+.nav-area .col-2,
+.nav-area .col-10,
+.nav-area .container {
+  height: 100%;
+}
+
+.nav-area ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-area ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-area ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+
+.nav-area ul li a:hover {
+  color: orange;
+}
+
+.nav-area .col-10 {
+  justify-content: flex-end;
+}
+
+.nav-area .logo {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-area .logo .nav-logo {
+  height: 168px;
+  width: 167px;
+  position: absolute;
+  bottom: -35px;
+}
+
+/* Body */
+
+#form {
+  height: 475px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 125px;
+}
+
+.form form {
+  width: 250px;
+  display: inline-block;
+}
+
+.form .username {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form .password {
+  position: relative;
+}
+
+.form .fullname {
+  position: relative;
+}
+
+.form .email {
+  position: relative;
+  margin-top: 20px;
+}
+
+.form .fa-lock,
+.form .fa-user,
+.form .fa-envelope {
+  position: absolute;
+  z-index: 4;
+  top: 10px;
+  left: 15px;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+
+.form input {
+  width: 100%;
+  padding-left: 40px;
+  outline: none;
+  border-radius: 7px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  height: 40px;
+  transition: all 0.3s;
+  padding-right: 50px;
+  background-color: #d4d0d0;
+}
+
+.form input::placeholder {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.form input:focus {
+  padding-left: 30px;
+}
+
+.form input:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.form .username input:focus ~ .fa-user {
+  left: 5px;
+  color: rgb(11, 87, 245);
+}
+
+.form .fullname input:focus ~ .fa-user {
+  left: 5px;
+  color: rgb(11, 87, 245);
+}
+
+.form .email input:focus ~ .fa-envelope {
+  left: 5px;
+  color: rgb(11, 87, 245);
+}
+
+.form .password {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.form .password input:focus ~ .fa-lock {
+  left: 5px;
+  color: rgb(11, 87, 245);
+}
+
+.form .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .button button {
+  border: 0;
+  width: 120px;
+  height: 35px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  transition: all 0.3s;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.form .button button:hover {
+  transform: scale(1.1);
+  background-color: rgba(51, 51, 51, 1);
+  color: white;
+}
+
+.form .password .fa-eye,
+.form .password .fa-eye-slash {
+  position: absolute;
+  z-index: 4;
+  top: 10px;
+  right: 15px;
+  font-size: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 75px;
+  background-color: rgb(51, 51, 51);
+  height: 340px;
+}
+
+.footer-up {
+  padding-top: 50px;
+}
+
+.footer-up .about {
+  width: 350px;
+}
+
+.footer-up .about p,
+.footer-up .features p,
+.footer-up .follow p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-up .about span {
+  color: white;
+}
+
+.footer-up .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-up .features ul li {
+  margin-bottom: 15px;
+}
+
+.footer-up .features ul li a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-up .features ul li a:hover {
+  opacity: 1;
+}
+
+.footer-up .follow ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-up .follow ul li a {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-up .follow ul li a span {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.footer-up .follow ul li a i {
+  font-size: 27px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.footer-up .follow ul li a:hover i {
+  opacity: 1;
+}
+
+.footer-up .follow ul li a:hover span {
+  opacity: 1;
+}
+
+.footer-down .text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-down .text p {
+  color: white;
+  width: max-content;
+}

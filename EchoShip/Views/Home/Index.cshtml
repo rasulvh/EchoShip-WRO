@@ -1,0 +1,92 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@section Links{
+    <link rel="stylesheet" href="~/assets/css/home.css">
+}
+
+<main>
+
+    <section id="ship-background">
+        <div class="gray-cover"></div>
+        <div class="text">
+            <h1>Safe & Reliable</h1>
+            <h1 class="echo-ship-text">EchoShip</h1>
+        </div>
+    </section>
+
+    <section id="our-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-sharp fa-light fa-address-card"></i>
+                    </div>
+                    <div class="text">
+                        <span>Contact Us</span>
+                        <p>+(994) 51-666-20-07</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-sharp fa-light fa-clock"></i>
+                    </div>
+                    <div class="text">
+                        <span>Sunday CLOSED</span>
+                        <p>Mon - Sat 10.00 - 18.00</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="icon">
+                        <i class="fa-light fa-location-dot"></i>
+                    </div>
+                    <div class="text">
+                        <span>Baku</span>
+                        <p>Azerbaijan</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="my-3">
+        <div class="container">
+            <h4>Click here to learn more <span>about us</span></h4>
+            <a asp-controller="AboutUs" asp-action="Index">Click</a>
+        </div>
+    </section>
+
+    <section id="why" class="my-3">
+        <div class="container">
+            <div class="head">
+                <p>Why EchoShip ?</p>
+                <span>Here are some reasons to choose EchoShip</span>
+            </div>
+            <div class="row">
+                <div class="col-6 d-flex align-items-center justify-content-center">
+                    <div class="reasons">
+                        <ul>
+                            <li>
+                                <i class="fa-regular fa-check" style="color: #9bd3ff;"></i><span>
+                                    Secure
+                                    services
+                                </span>
+                            </li>
+                            <li><i class="fa-regular fa-check" style="color: #9bd3ff;"></i><span>Fast</span></li>
+                            <li>
+                                <i class="fa-regular fa-check" style="color: #9bd3ff;"></i><span>Cost savings</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="image">
+                        <img src="~/assets/img/why.png" alt="why">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>

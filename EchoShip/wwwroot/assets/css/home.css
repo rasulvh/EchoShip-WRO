@@ -1,0 +1,294 @@
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+/* Header */
+
+.nav-area {
+  height: 100px;
+  background-color: rgb(0, 12, 32);
+}
+
+.nav-area .row,
+.nav-area .col-2,
+.nav-area .col-10,
+.nav-area .container {
+  height: 100%;
+}
+
+.nav-area ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-area ul li {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.nav-area ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+
+.nav-area ul li a:hover {
+  color: orange;
+}
+
+.nav-area .col-10 {
+  justify-content: flex-end;
+}
+
+.nav-area .logo {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.nav-area .logo .nav-logo {
+  height: 168px;
+  width: 167px;
+  position: absolute;
+  bottom: -35px;
+}
+
+/* Main */
+
+#ship-background {
+  background-image: url(./../img/ship-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  position: relative;
+}
+
+#ship-background .gray-cover {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  position: absolute;
+}
+
+#ship-background .text {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  margin-top: 310px;
+}
+
+#ship-background .text h1:not(.echo-ship-text) {
+  width: 65%;
+  margin: 0 auto;
+  font-size: 75px;
+  color: white;
+  font-weight: 600;
+}
+
+#ship-background .text .echo-ship-text {
+  width: 65%;
+  margin: 0 auto;
+  color: orange;
+  font-size: 75px;
+  font-weight: 600;
+}
+
+#our-info {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(249, 249, 249);
+}
+
+#our-info .col-4 {
+  display: flex;
+  justify-content: center;
+}
+
+#our-info .icon i {
+  font-size: 50px;
+  color: orange;
+}
+
+#our-info .icon {
+  display: flex;
+  align-items: center;
+}
+
+#our-info .text {
+  margin-left: 20px;
+}
+
+#our-info .text p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#our-info .text span {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+#about-us {
+  height: 150px;
+  display: flex;
+  align-items: center;
+}
+
+#about-us h4 {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+#about-us h4 span {
+  color: orange;
+}
+
+#about-us a {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: orange;
+  border: 1px solid orange;
+  border-radius: 15px;
+  transition: all 0.3s;
+}
+
+#about-us a:hover {
+  background-color: orange;
+  color: white;
+}
+
+#why .head {
+  margin: 0 auto;
+  width: max-content;
+  margin-bottom: 40px;
+}
+
+#why .head p {
+  text-align: center;
+  font-size: 33px;
+  margin: 0;
+}
+
+#why .head span {
+  opacity: 0.7;
+  font-size: 15px;
+}
+
+#why .reasons ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+#why .reasons ul li i {
+  margin-right: 10px;
+}
+
+#why .reasons ul li {
+  margin-bottom: 10px;
+}
+
+#why .reasons ul li span {
+  font-size: 18px;
+  opacity: 0.7;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 75px;
+  background-color: rgb(51, 51, 51);
+  height: 340px;
+}
+
+.footer-up {
+  padding-top: 50px;
+}
+
+.footer-up .about {
+  width: 350px;
+}
+
+.footer-up .about p,
+.footer-up .features p,
+.footer-up .follow p {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+.footer-up .about span {
+  color: white;
+}
+
+.footer-up .features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-up .features ul li {
+  margin-bottom: 15px;
+}
+
+.footer-up .features ul li a {
+  color: white;
+  opacity: 0.7;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.footer-up .features ul li a:hover {
+  opacity: 1;
+}
+
+.footer-up .follow ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-up .follow ul li a {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  justify-content: space-between;
+  text-decoration: none;
+  color: white;
+}
+
+.footer-up .follow ul li a span {
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.footer-up .follow ul li a i {
+  font-size: 27px;
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.footer-up .follow ul li a:hover i {
+  opacity: 1;
+}
+
+.footer-up .follow ul li a:hover span {
+  opacity: 1;
+}
+
+.footer-down .text {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-down .text p {
+  color: white;
+  width: max-content;
+}

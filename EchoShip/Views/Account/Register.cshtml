@@ -1,0 +1,48 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+@section Links{
+    <link rel="stylesheet" href="~/assets/css/account.css">
+}
+
+@section Scripts{
+    <script src="~/assets/js/account.js"></script>
+}
+
+
+<main>
+
+    <section id="form">
+            <div class="form">
+
+                <form method="post" asp-action="Register">
+                    <div class="fullname">
+                        <input placeholder="FULLNAME" asp-for="Fullname">
+                        <i class="fa-light fa-user"></i>
+                    </div>
+                    <div class="username">
+                        <input placeholder="USERNAME" asp-for="Username">
+                        <i class="fa-light fa-user"></i>
+                    </div>
+                    <div class="email">
+                        <input placeholder="EMAIL" asp-for="Email">
+                        <i class="fa-light fa-envelope"></i>
+                    </div>
+                    <div class="password">
+                        <input placeholder="PASSWORD" class="password-input" asp-for="Password" />
+                        <i class="fa-light fa-lock"></i>
+                        <i class="fa-light fa-eye d-none"></i>
+                        <i class="fa-light fa-eye-slash d-none"></i>
+                    </div>
+                    <div class="button">
+                        <button type="submit">Register</button>
+                    </div>
+                </form>
+
+
+            </div>
+        </section>
+
+</main>

@@ -1,0 +1,148 @@
+﻿body {
+    font-family: "Noto Sans", sans-serif;
+}
+
+/* Header */
+
+.nav-area {
+    height: 100px;
+    background-color: rgb(0, 12, 32);
+}
+
+    .nav-area .row,
+    .nav-area .col-2,
+    .nav-area .col-10,
+    .nav-area .container {
+        height: 100%;
+    }
+
+    .nav-area ul {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+
+        .nav-area ul li {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+            .nav-area ul li a {
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+                transition: all 0.3s;
+            }
+
+                .nav-area ul li a:hover {
+                    color: orange;
+                }
+
+    .nav-area .col-10 {
+        justify-content: flex-end;
+    }
+
+    .nav-area .logo {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+        .nav-area .logo .nav-logo {
+            height: 168px;
+            width: 167px;
+            position: absolute;
+            bottom: -35px;
+        }
+
+
+/* Footer */
+
+footer {
+    background-color: rgb(51, 51, 51);
+    height: 340px;
+}
+
+.footer-up {
+    padding-top: 50px;
+}
+
+    .footer-up .about {
+        width: 350px;
+    }
+
+        .footer-up .about p,
+        .footer-up .features p,
+        .footer-up .follow p {
+            color: white;
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        .footer-up .about span {
+            color: white;
+        }
+
+    .footer-up .features ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-up .features ul li {
+            margin-bottom: 15px;
+        }
+
+            .footer-up .features ul li a {
+                color: white;
+                opacity: 0.7;
+                text-decoration: none;
+                transition: all 0.3s;
+            }
+
+                .footer-up .features ul li a:hover {
+                    opacity: 1;
+                }
+
+    .footer-up .follow ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .footer-up .follow ul li a {
+            display: flex;
+            align-items: center;
+            width: 170px;
+            justify-content: space-between;
+            text-decoration: none;
+            color: white;
+        }
+
+            .footer-up .follow ul li a span {
+                opacity: 0.7;
+                transition: all 0.3s;
+            }
+
+            .footer-up .follow ul li a i {
+                font-size: 27px;
+                opacity: 0.7;
+                transition: all 0.3s;
+            }
+
+            .footer-up .follow ul li a:hover i {
+                opacity: 1;
+            }
+
+            .footer-up .follow ul li a:hover span {
+                opacity: 1;
+            }
+
+.footer-down .text {
+    display: flex;
+    justify-content: center;
+}
+
+    .footer-down .text p {
+        color: white;
+        width: max-content;
+    }
